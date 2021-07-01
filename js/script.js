@@ -41,3 +41,6 @@ console.log('totale a due decimali: ', abbrTot);
 //Convertire in stringa
 var finalTot = abbrTot.toString();
 console.log(typeof finalTot);
+
+//Mostrare prezzo finale nella pagina
+result.innerHTML = message + finalTot;
