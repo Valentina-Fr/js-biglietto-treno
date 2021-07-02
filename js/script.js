@@ -24,23 +24,15 @@ console.log('sconto 40%: ', discount40);
 console.log('elemento html: ', result);
 console.log(message);
 
-var firstTot
+var tot
 
 if (age < 18) {
-    console.log(firstTot = price - discount20)
+    console.log(tot = price - discount20)
 } else if (age > 65) {
-    console.log(firstTot = price - discount40)
+    console.log(tot = price - discount40)
 } else {
-    console.log(firstTot = price)
+    console.log(tot = price)
 }
 
-//Abbreviare a due decimali
-var abbrTot = firstTot.toFixed(2);
-console.log('totale a due decimali: ', abbrTot);
-
-//Convertire in stringa
-var finalTot = abbrTot.toString();
-console.log(typeof finalTot);
-
 //Mostrare prezzo finale nella pagina
-result.innerHTML = message + finalTot;
+result.innerHTML = message + tot.toFixed(2);
